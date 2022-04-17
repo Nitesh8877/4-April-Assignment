@@ -14,5 +14,5 @@ console.log(Object.keys(obj));
 console.log(Object.values(obj));
 // After Sort the elements by Id
 
-let ou=obj.sort((a,b)=>a-b);
-console.log(ou);
+obj.sort((a,b)=>(a.Id > b.Id) ?1:-1)
+console.log(obj);
